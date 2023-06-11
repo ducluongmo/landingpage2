@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 100px;
+    align-items: center;
+}
+
+header .navigation a{
+    position: relative;
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 5px;
+    transform-origin: right;
+    transition: transform 0.5s;
+    transform: scale(0);
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.mobile-menu-btn {
+    display: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+.lorem {
+    background-image:linear-gradient(0, rgba(0, 0, 0, 0.8),rgba(0,0,0,0.4)), url('./img/bg-masthead.jpg');
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    /* background: linear-gradient(#9b6f6f,#000); */
+}
+
+.lorem-container {
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.lorem-heading {
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lorem-content {
+    width: 50%;
+    transform: translate(50%);
+    color: #ecdada;
+    margin-bottom: 50px;
+}
+
+.btn-get-et {
+    padding: 12px 20px;
+    background-color: #c7aaaa;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.built {
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0),black, rgb(40, 40, 40));
+    height: 100vh;
+    width: 100%;
+}
+
+.built-container {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.built-heading, .built-content {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.built-content {
+    width: 60%;
+    transform: translate(33%);
+    color: #ecdada;
+}
+
+.shoreline{
+    margin-top: 150px;
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.shoreline .shoreline-image {
+    flex-basis: 68%;
+}
+
+.shoreline .shoreline-image img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.shoreline .shore-text {
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.shoreline .shore-text p{
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 30px;
+    width: 80%;
+    transform: translate(15%);
+}
+
+.shoreline .shore-text h3{
+    margin-top: 200px;
+    margin-bottom: 12px;
+}
+
+.line {
+    margin-top: 10%;
+    flex-basis: 1.5%;
+    height: 300px;
+    background-color: cadetblue;
+}
+
+.grid .top, .grid .bottom{
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid .top > div, .grid .bottom > div {
+    flex-basis: 50%;
+}
+
+.grid .top img, .grid .bottom img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.grid .top .text, .grid .bottom .text {
+    text-align: center;
+    background-color: black;
+    color: #c7aaaa;
+}
+
+.grid .top .text p,
+.grid .bottom .text p {
+    font-weight: 500;
+    font-size: 16px;
+    width: 50%;
+    line-height: 30px;
+    transform: translate(50%);
+}
+
+.grid .top .text h3,
+.grid .bottom .text h3 {
+    margin-top: 140px;
+    margin-bottom: 12px;
+}
+
+.bottom {
+    margin-bottom: 150px;
+    flex-direction: row-reverse;
+}
+
+.sign-in {
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(0, rgba(0, 0, 0, 1),rgba(0,0,0,0.4)), url('./img/bg-signup.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.sign-in i {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 200px;
+}
+
+.sign-in h3 {
+    font-size: 64px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.sign-in input {
+    border-radius: 4px;
+    margin-top: 50px;
+    padding: 16px 200px 16px 20px;
+    margin-right: 50px;
+}
+
+.sign-in button {
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: rgba(193, 153, 153, 0.4);
+}
+
+footer {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color: black;
+}
+
+footer p {
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #c7aaaa;
+}
+  

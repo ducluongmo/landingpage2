@@ -1,0 +1,100 @@
+@media screen and (max-width: 844px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 4px;
+        display: block;
+        transition: .5s;
+    }
+
+    .mobile-menu-btn:hover {
+        border: 1px solid #ecdada;
+        background-color: #ecdada;
+    }
+
+    .lorem-container {
+        position: absolute;
+        top: 50%;
+    }
+
+    .lorem {
+        background-position: bottom;
+    }
+
+    .lorem-heading {
+        font-size: 64px;
+        letter-spacing: 10px;
+        margin-bottom: 0;
+    }
+
+    .lorem-content, .built-content,
+    .grid .top .text p,
+    .grid .bottom .text p {
+        width: 100%;
+        transform: none;
+    }
+
+    .built-container {
+        transform: translate(-50%, -5%);
+    }
+
+    .shoreline {
+        padding: 0 50px;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .shoreline .shore-text p {
+        width: 100%;
+        transform: none;
+        padding: 0 50px;
+    }
+
+    .shoreline .shore-text h3{
+        margin-top: 50px;
+        margin-bottom: 12px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .grid .top, .grid .bottom {
+        display: grid;
+        padding: 0 50px;
+    }
+
+    .grid .top img, .grid .bottom img {
+        height: 100%;
+    }
+
+    .grid .top .text h3,
+    .grid .bottom .text h3 {
+        margin: 0;
+    }
+
+    .grid .top .text {
+        margin-bottom: 50px;
+    }
+
+    .grid .top .text, .grid .bottom .text {
+        padding: 50px;
+    }
+
+    .sign-in {
+        height: 80vh;
+    }
+
+    .sign-in input {
+        padding: 16px 20px 16px 20px;
+        margin-right: 20px;
+    }
+}
